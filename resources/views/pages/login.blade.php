@@ -6,7 +6,7 @@
 	<div class="container">
 		<h1>Login</h1>
 		<em></em>
-		<h2><a href="index.html">Home</a><label>/</label>Login</h2>
+		<h2><a href="{{ url('/home')}}">Home</a><label>/</label>Login</h2>
 	</div>
 </div>
 <!--login-->
@@ -35,7 +35,7 @@
 				 
 				 <p>Pellentesque neque leo, dictum sit amet accumsan non, dignissim ac mauris. Mauris rhoncus, lectus tincidunt tempus aliquam, odio 
 				 libero tincidunt metus, sed euismod elit enim ut mi. Nulla porttitor et dolor sed condimentum. Praesent porttitor lorem dui, in pulvinar enim rhoncus vitae. Curabitur tincidunt, turpis ac lobortis hendrerit, ex elit vestibulum est, at faucibus erat ligula non neque.</p>
-				<a href="register.html" class=" hvr-skew-backward">Register</a>
+				<a href="{{ url('/register')}}" class=" hvr-skew-backward">Register</a>
 
 			</div>
 			

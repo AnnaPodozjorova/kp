@@ -16,3 +16,12 @@
 // });
 
 Route::get('/', 'HomeController@index');
+
+Route::get('login', 'HomeController@login');
+Route::get('Checkout', 'HomeController@checkout');
+Route::get('contact', 'HomeController@contact');
+Route::get('Error404', 'HomeController@Error404');
+Route::get('product','HomeController@product');
+Route::get('register', 'HomeController@register');
+Route::get('wishlist', 'HomeController@wishlist');
+

@@ -6,7 +6,7 @@
 	<div class="container">
 		<h1>Wishlist</h1>
 		<em></em>
-		<h2><a href="index.html">Home</a><label>/</label>Wishlist</h2>
+		<h2><a href="{{ url('/home')}}">Home</a><label>/</label>Wishlist</h2>
 	</div>
 </div>
 <!--login-->
