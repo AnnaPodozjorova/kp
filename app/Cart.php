@@ -1,0 +1,13 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Cart extends Model
+{
+    protected $table = '_cart';
+    protected $primaryKey = 'id';
+    public $timestamps = false;
+
+}
