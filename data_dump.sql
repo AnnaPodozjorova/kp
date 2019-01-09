@@ -1,7 +1,7 @@
 CREATE DATABASE IF NOT EXISTS kunstipood DEFAULT CHARACTER SET utf8;
 USE kunstipood;
 
-
+--test124
 INSERT INTO user VALUES 
 (1,'Ivan', 'Orav', '+37212345678', 'kajaoja 2', 'ivan.orav@gmail.com', 'parool'),
 (2,'Mari', 'Mets', '+37211111111', 'metsa tee 6', 'mmets@gmail.com', 'parool1'),
