@@ -18,7 +18,7 @@ class CreateCardTable extends Migration
             $table->timestamp('StartDate')->nullable();;
             $table->timestamp('EndDate')->nullable();;
             $table->integer('IDUser')->unsigned()->index();
-            $table->foreign('IDUser')->references('id')->on('user');
+            $table->foreign('IDUser')->references('id')->on('users');
             $table->integer('IDCard')->unsigned()->index();
             $table->foreign('IDCard')->references('id')->on('_card_type');
         });

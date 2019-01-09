@@ -16,7 +16,7 @@ class CreateBillTable extends Migration
         Schema::create('bill', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('IDUser')->unsigned()->index();
-            $table->foreign('IDUser')->references('id')->on('user');
+            $table->foreign('IDUser')->references('id')->on('users');
             $table->timestamp('Date'); 
             $table->boolean('Status')->default(0);
             $table->integer('IDOrder')->unsigned()->index();
