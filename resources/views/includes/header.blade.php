@@ -50,10 +50,10 @@
    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
         <ul class="nav navbar-nav nav_1">
-            <li><a class="color" href="{{ url('/home')}}">Home</a></li>
+            <li><a class="color" href="{{ url('/')}}">Home</a></li>
             
     		<li class="dropdown mega-dropdown active">
-			    <a class="color1" href="#" class="dropdown-toggle" data-toggle="dropdown">Women<span class="caret"></span></a>				
+			    <a class="color1" href="#" class="dropdown-toggle" data-toggle="dropdown">Products<span class="caret"></span></a>				
 				<div class="dropdown-menu ">
                     <div class="menu-top">
 						<div class="col1">
@@ -116,71 +116,7 @@
 					</div>                  
 				</div>				
 			</li>
-			<li class="dropdown mega-dropdown active">
-			    <a class="color2" href="#" class="dropdown-toggle" data-toggle="dropdown">Men<span class="caret"></span></a>				
-				<div class="dropdown-menu mega-dropdown-menu">
-                    <div class="menu-top">
-						<div class="col1">
-							<div class="h_nav">
-								<h4>Submenu1</h4>
-									<ul>
-										<li><a href="{{ url('/product')}}">Accessories</a></li>
-										<li><a href="{{ url('/product')}}">Bags</a></li>
-										<li><a href="{{ url('/product')}}">Caps & Hats</a></li>
-										<li><a href="{{ url('/product')}}">Hoodies & Sweatshirts</a></li>
-										
-									</ul>	
-							</div>							
-						</div>
-						<div class="col1">
-							<div class="h_nav">
-								<h4>Submenu2</h4>
-								<ul>
-										<li><a href="{{ url('/product')}}">Jackets & Coats</a></li>
-										<li><a href="{{ url('/product')}}">Jeans</a></li>
-										<li><a href="{{ url('/product')}}">Jewellery</a></li>
-										<li><a href="{{ url('/product')}}">Jumpers & Cardigans</a></li>
-										<li><a href="{{ url('/product')}}">Leather Jackets</a></li>
-										<li><a href="{{ url('/product')}}">Long Sleeve T-Shirts</a></li>
-									</ul>	
-							</div>							
-						</div>
-						<div class="col1">
-							<div class="h_nav">
-								<h4>Submenu3</h4>
-								
-<ul>
-										<li><a href="{{ url('/product')}}">Shirts</a></li>
-										<li><a href="{{ url('/product')}}">Shoes, Boots & Trainers</a></li>
-										<li><a href="{{ url('/product')}}">Sunglasses</a></li>
-										<li><a href="{{ url('/product')}}">Sweatpants</a></li>
-										<li><a href="{{ url('/product')}}">Swimwear</a></li>
-										<li><a href="{{ url('/product')}}">Trousers & Chinos</a></li>
-										
-									</ul>	
-								
-							</div>							
-						</div>
-						<div class="col1">
-							<div class="h_nav">
-								<h4>Submenu4</h4>
-								<ul>
-									<li><a href="{{ url('/product')}}">T-Shirts</a></li>
-									<li><a href="{{ url('/product')}}">Underwear & Socks</a></li>
-									<li><a href="{{ url('/product')}}">Vests</a></li>
-									<li><a href="{{ url('/product')}}">Jackets & Coats</a></li>
-									<li><a href="{{ url('/product')}}">Jeans</a></li>
-									<li><a href="{{ url('/product')}}">Jewellery</a></li>
-								</ul>	
-							</div>							
-						</div>
-						<div class="col1 col5">
-						<img src="images/me1.png" class="img-responsive" alt="">
-						</div>
-						<div class="clearfix"></div>
-					</div>                  
-				</div>				
-			</li>
+			
 			<li><a class="color3" href="{{ url('/product')}}">Sale</a></li>
 			<li><a class="color4" href="{{ url('/Error404')}}">About</a></li>
             <li><a class="color5" href="typo.html">Short Codes</a></li>
