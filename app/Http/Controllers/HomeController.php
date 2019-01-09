@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     public function index() {
-        return view('welcome');
+        return view('home');
     }
 
     public function login() {
@@ -31,6 +31,12 @@ class HomeController extends Controller
     }
     public function wishlist() {
         return view('pages.wishlist');
+    }
+    public function home() {
+        return view('pages.home');
+    }
+    public function verify() {
+        return view('pages.verify');
     }
 
 }

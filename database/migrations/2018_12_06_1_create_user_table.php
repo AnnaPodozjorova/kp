@@ -13,7 +13,7 @@ class CreateUserTable extends Migration
      */
     public function up()
     {
-        Schema::create('user', function (Blueprint $table) {
+        Schema::create('users', function (Blueprint $table) { //uue tabeli 'users' loomine
             $table->increments('id');
             $table->string('name', 50);
             $table->string('lastname', 50);
@@ -21,6 +21,8 @@ class CreateUserTable extends Migration
             $table->string('address', 50);
             $table->string('email', 50)->unique();
             $table->string('password',255);
+            $table->rememberToken(); //rememberToken kasutatakse 'remember me' sisse logimisel
+            $table->timestamps();//lisab  created_at ja updated_at veerge
         });
     }
 
@@ -31,6 +33,6 @@ class CreateUserTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user');
+        Schema::drop('users');//drop table
     }
 }

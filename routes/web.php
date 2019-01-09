@@ -24,4 +24,5 @@ Route::get('Error404', 'HomeController@Error404');
 Route::get('product','HomeController@product');
 Route::get('register', 'HomeController@register');
 Route::get('wishlist', 'HomeController@wishlist');
-
+Route::get('home', 'HomeController@home');
+Route::get('verify', 'HomeController@verify');
