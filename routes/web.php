@@ -16,7 +16,7 @@
 // });
 
 Route::get('/', 'HomeController@index');
-
+Auth::routes();
 Route::get('login', 'HomeController@login');
 Route::get('Checkout', 'HomeController@checkout');
 Route::get('contact', 'HomeController@contact');
