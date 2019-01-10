@@ -19,4 +19,9 @@ class Subject extends Model
     {
         return $this->hasMany('App\Comments');
     }
+
+    public function presentPrice()
+    {
+        return money_format('$%i', $this->price / 100);
+    }
 }

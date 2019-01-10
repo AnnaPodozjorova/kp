@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Subject;
 class HomeController extends Controller
 {
     public function index() {
@@ -23,9 +23,11 @@ class HomeController extends Controller
     public function Error404() {
         return view('pages.Error404');
     }
-    public function product() {
-        return view('pages.product');
-    }
+    public function product()
+{
+    $Subjects= Subject::all()->toArray();
+    return view('pages.product', compact('Subjects'));
+}
     public function register() {
         return view('pages.register');
     }
