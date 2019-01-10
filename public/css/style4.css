@@ -16,7 +16,8 @@
 	font-size: 30px;
 }
 .rw-sentence span{
-	color: #000;
+    color: #ffffff;
+    text-shadow: 2px 2px black;
 	white-space: nowrap;
 }
 .rw-sentence > span:first-child{
