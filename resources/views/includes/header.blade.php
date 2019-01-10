@@ -4,7 +4,7 @@
 <div class="container">
 		<div class="head">
 			<div class=" logo">
-				<a href="{{ url('/home')}}"><img src="images/logo.png" alt=""></a>	
+				<a href="{{ url('/')}}"><img src="images/logo.png" alt=""></a>	
 			</div>
 		</div>
 	</div>

@@ -1,23 +1,27 @@
 @extends('layouts.default')
 
 @section('content')
+<div class="banner">
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                </div>
-            </div>
-        </div>
-    </div>
+<section class="rw-wrapper">
+				<h1 class="rw-sentence">
+					<span>Fine &amp; Smooth</span>
+					<div class="rw-words rw-words-1">
+						<span>Head tooted</span>
+                        <span>Odavad hinnad</span>
+                        <span>Projekt on väga nõme</span>
+                        <span>Veeel midagi huvitavat</span>
+					</div>
+					<div class="rw-words rw-words-2">
+						<span>Hea teenindus</span>
+						<span>Mugav veebileht</span>
+						<span>Mingi veel </span>
+						<span>Veeel midagi huvitavat</span>
+					</div>
+				</h1>
+			</section>
+			</div>
 </div>
+<br>
 @endsection
+

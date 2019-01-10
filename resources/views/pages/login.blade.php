@@ -27,15 +27,14 @@
 						 <label class="checkbox1"><input type="checkbox" name="checkbox" ><i> </i>Forget Password</label>
 					   </a>
 				<label class="hvr-skew-backward">
-					<input type="submit" value="login">
+					<input type="submit" value="Logi sisse">
 				</label>
 			</div>
 			<div class="col-md-6 login-right">
-				 <h3>Completely Free Account</h3>
+				 <h3>Registreeri enda konto tasuta!</h3>
 				 
-				 <p>Pellentesque neque leo, dictum sit amet accumsan non, dignissim ac mauris. Mauris rhoncus, lectus tincidunt tempus aliquam, odio 
-				 libero tincidunt metus, sed euismod elit enim ut mi. Nulla porttitor et dolor sed condimentum. Praesent porttitor lorem dui, in pulvinar enim rhoncus vitae. Curabitur tincidunt, turpis ac lobortis hendrerit, ex elit vestibulum est, at faucibus erat ligula non neque.</p>
-				<a href="{{ url('/register')}}" class=" hvr-skew-backward">Register</a>
+				 <p>Kui sul puudub kasutaja, siis mine registreeri endale konto. Vajuta all olevat registreeri nuppu</p>
+				<a href="{{ url('/register')}}" class=" hvr-skew-backward">Registreerima</a>
 
 			</div>
 			
@@ -45,28 +44,6 @@
 
 </div>
 
-<!--//login-->
-
-			<!--brand-->
-		<div class="container">
-			<div class="brand">
-				<div class="col-md-3 brand-grid">
-					<img src="images/ic.png" class="img-responsive" alt="">
-				</div>
-				<div class="col-md-3 brand-grid">
-					<img src="images/ic1.png" class="img-responsive" alt="">
-				</div>
-				<div class="col-md-3 brand-grid">
-					<img src="images/ic2.png" class="img-responsive" alt="">
-				</div>
-				<div class="col-md-3 brand-grid">
-					<img src="images/ic3.png" class="img-responsive" alt="">
-				</div>
-				<div class="clearfix"></div>
-			</div>
-			</div>
-			<!--//brand-->
-		
-	<!--//content-->
-		<!--//footer-->
+<br>
+<br>
 @stop
