@@ -26,8 +26,8 @@ Route::get('register', 'HomeController@register');
 Route::get('wishlist', 'HomeController@wishlist');
 Route::get('home', 'HomeController@home');
 Route::get('verify', 'HomeController@verify');
-Route::get('single', 'HomeController@single');
-
+//Route::get('single', 'HomeController@single');
+Route::get('single/{id}', 'HomeController@getProduct');
 
 //main Menu
 Route::get('/Categories', 'MenuController@Category');

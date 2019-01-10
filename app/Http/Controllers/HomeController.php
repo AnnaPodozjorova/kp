@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use DB;
 use Illuminate\Http\Request;
 use App\Subject;
 class HomeController extends Controller
@@ -25,10 +25,15 @@ class HomeController extends Controller
     }
     public function product()
     {
-    $Subjects= Subject::all()->toArray();
-    return view('pages.product', compact('Subjects'));
+      
+        $Subjects= Subject::all()->toArray();
+        return view('pages.product', compact('Subjects'));
     }
 
+    public function getProduct($id){
+        $Subjects=\App\Subject::find($id);
+        return view('pages.single', compact('Subjects'));
+    }
 
     public function register() {
         return view('pages.register');
