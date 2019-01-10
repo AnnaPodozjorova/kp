@@ -53,7 +53,9 @@
             <li><a class="color" href="{{ url('/')}}">Home</a></li>
             
     		<li class="dropdown mega-dropdown active">
-			    <a class="color1" href="#" class="dropdown-toggle" data-toggle="dropdown">Products<span class="caret"></span></a>				
+			    <a class="color1" href="{{ url('/Categories')}}" class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>				
+				
+				<!--DROP DOWN EI t;;TA -->
 				<div class="dropdown-menu ">
                     <div class="menu-top">
 						<div class="col1">
@@ -68,47 +70,7 @@
 									</ul>	
 							</div>							
 						</div>
-						<div class="col1">
-							<div class="h_nav">
-								<h4>Submenu2</h4>
-								<ul>
-										<li><a href="{{ url('/product')}}">Jackets & Coats</a></li>
-										<li><a href="{{ url('/product')}}">Jeans</a></li>
-										<li><a href="{{ url('/product')}}">Jewellery</a></li>
-										<li><a href="{{ url('/product')}}">Jumpers & Cardigans</a></li>
-										<li><a href="{{ url('/product')}}">Leather Jackets</a></li>
-										<li><a href="{{ url('/product')}}">Long Sleeve T-Shirts</a></li>
-									</ul>	
-							</div>							
-						</div>
-						<div class="col1">
-							<div class="h_nav">
-								<h4>Submenu3</h4>
-									<ul>
-										<li><a href="{{ url('/product')}}">Shirts</a></li>
-										<li><a href="{{ url('/product')}}">Shoes, Boots & Trainers</a></li>
-										<li><a href="{{ url('/product')}}">Sunglasses</a></li>
-										<li><a href="{{ url('/product')}}">Sweatpants</a></li>
-										<li><a href="{{ url('/product')}}">Swimwear</a></li>
-										<li><a href="{{ url('/product')}}">Trousers & Chinos</a></li>
-										
-									</ul>	
-								
-							</div>							
-						</div>
-						<div class="col1">
-							<div class="h_nav">
-								<h4>Submenu4</h4>
-								<ul>
-									<li><a href="{{ url('/product')}}">T-Shirts</a></li>
-									<li><a href="{{ url('/product')}}">Underwear & Socks</a></li>
-									<li><a href="{{ url('/product')}}">Vests</a></li>
-									<li><a href="{{ url('/product')}}">Jackets & Coats</a></li>
-									<li><a href="{{ url('/product')}}">Jeans</a></li>
-									<li><a href="{{ url('/product')}}">Jewellery</a></li>
-								</ul>	
-							</div>							
-						</div>
+				
 						<div class="col1 col5">
 						<img src="images/me.png" class="img-responsive" alt="">
 						</div>

@@ -26,3 +26,13 @@ Route::get('register', 'HomeController@register');
 Route::get('wishlist', 'HomeController@wishlist');
 Route::get('home', 'HomeController@home');
 Route::get('verify', 'HomeController@verify');
+
+
+//main Menu
+Route::get('/Categories', 'MenuController@Category');
+
+//kategooria
+Route::get('/Categories/cat/{id}', 'MenuController@catByID');
+
+//subcategory
+Route::get('/Categories/subcat/{id}', 'MenuController@subcatByID');
