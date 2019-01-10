@@ -14,6 +14,6 @@
             @endif    
         @endforeach
         </ul> 
-
+</ul>
 
 @stop

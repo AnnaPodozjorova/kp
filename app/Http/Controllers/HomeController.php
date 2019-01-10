@@ -24,10 +24,12 @@ class HomeController extends Controller
         return view('pages.Error404');
     }
     public function product()
-{
+    {
     $Subjects= Subject::all()->toArray();
     return view('pages.product', compact('Subjects'));
-}
+    }
+
+
     public function register() {
         return view('pages.register');
     }

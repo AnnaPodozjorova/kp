@@ -1,3 +1,5 @@
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <div class="header">
 <div class="container">
 		<div class="head">
@@ -60,7 +62,6 @@
                     <div class="menu-top">
 						<div class="col1">
 							<div class="h_nav">
-								<h4>Submenu1</h4>
 									<ul>
 										<li><a href="{{ url('/product')}}">Accessories</a></li>
 										<li><a href="{{ url('/product')}}">Bags</a></li>
@@ -79,7 +80,7 @@
 				</div>				
 			</li>
 			
-			<li><a class="color3" href="{{ url('/product')}}">Sale</a></li>
+			<li><a class="color3" href="{{ url('/product')}}">Products</a></li>
 			<li><a class="color4" href="{{ url('/Error404')}}">About</a></li>
             <li><a class="color5" href="typo.html">Short Codes</a></li>
             <li ><a class="color6" href="{{ url('/contact')}}">Contact</a></li>
