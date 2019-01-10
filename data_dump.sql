@@ -30,13 +30,13 @@ INSERT INTO _sub_category VALUES
 
 INSERT INTO subject VALUES 
 (1, 3,'AKRÜÜLKOMPLEKT "SIMPLY" 12X12ML DALER-ROWNEY', 'Need varvid on voimalik kasutada otse tuubist ning nad sobivad kogu kunstipindadele nagu paber, papp ja lõuend.', 
-    'COVER' , 10, 7.8),
+    'https://vunder.ee/media/54-340x255.jpg' , 10, 7.8),
 (2, 2,'AKVARELLI KOMPLEKT "SIMPLY"12X12 ML DALER-ROWNEY', 'Komplekt "Simply" sisaldab 12 pastasuguseid akvarellvärve tuubis mahuga 12 ml.', 
-    'COVER', 5, 6.5),
+    'https://vunder.ee/media/4611-340x255.jpg', 5, 6.5),
 (3, 2,'AKVARELLI KOMPLEKT "SONET" 12X10ML, ST.-PETERBURG', 'Akvarellvärvid seeriast "Sonett" on mõeldud maalimiseks, omavad intensiivset ja puhast värvigammat.', 
-    'COVER', 0, 11),
+    'https://vunder.ee/media/4393-340x255.jpg', 0, 11),
 (4, 3,'AKRÜÜLKOMPLEKT "SIMPLY" 24X12ML DALER-ROWNEY', 'Need värvid on võimalik kasutada otse tuubist ning nad sobivad kogu kunstipindadele nagu paber, papp ja lõuend.', 
-    'COVER', 9, 14.7);
+    'https://vunder.ee/media/4929-340x255.jpg', 9, 14.7);
 
 INSERT INTO _comments VALUES 
 (1, 1, 3,'v2ga hea v2rv', '2019-1-02 01:00:15'),

@@ -13,7 +13,7 @@
 	<!--content-->
 		<div class="product">
 			<div class="container">
-			<div class="col-md-10">
+			<div class="col-md-15">
 				<div class="mid-popular">
 				@foreach($Subjects as $row)
 					<div class="col-md-4 item-grid1 simpleCart_shelfItem">
@@ -21,7 +21,7 @@
 					<div class="pro-img">
 						<img src="images/pc.jpg" class="img-responsive" alt="">
 						<div class="zoom-icon ">
-						<a class="picture" href="images/pc.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox"><i class="glyphicon glyphicon-search icon "></i></a>
+						<a class="picture" href="images/pc.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox"></i></a>
 						<a href="{{ url('/single')}}"><i class="glyphicon glyphicon-menu-right icon"></i></a>
 						</div>
 						</div>
