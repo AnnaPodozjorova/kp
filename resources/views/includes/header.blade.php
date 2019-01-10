@@ -54,22 +54,24 @@
     <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
         <ul class="nav navbar-nav nav_1">
             <li><a class="color" href="{{ url('/')}}">Home</a></li>
-            
-    		<li class="dropdown mega-dropdown active">
-			    <a class="color1" href="{{ url('/Categories')}}" class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>				
-				
-				<!--DROP DOWN EI t;;TA -->
+        
+			<li class="dropdown mega-dropdown active">
+			@foreach ($categories as $category)
+				<li>
+			    <a class="color1" href="" class="dropdown-toggle" data-toggle="dropdown">{{$category->name}} <span class="caret"></span></a>				
 				<div class="dropdown-menu ">
                     <div class="menu-top">
 						<div class="col1">
 							<div class="h_nav">
-									<ul>
-										<li><a href="{{ url('/product')}}">Accessories</a></li>
-										<li><a href="{{ url('/product')}}">Bags</a></li>
-										<li><a href="{{ url('/product')}}">Caps & Hats</a></li>
-										<li><a href="{{ url('/product')}}">Hoodies & Sweatshirts</a></li>
+							
+									@foreach ($subcategories as $subcategory)
+              						 @if($category->id == $subcategory->idCat)
+               							<a href="{{URL::to('Categories/subcat/'.$subcategory->id)}}">
+                  						{!! $subcategory->name !!} </a>
+               						@else 
+               						@endif
+										@endforeach
 										
-									</ul>	
 							</div>							
 						</div>
 				
@@ -78,7 +80,9 @@
 						</div>
 						<div class="clearfix"></div>
 					</div>                  
-				</div>				
+				</div>	
+			</li>
+				@endforeach				
 			</li>
 			
 			<li><a class="color3" href="{{ url('/product')}}">Products</a></li>

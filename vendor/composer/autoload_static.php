@@ -410,6 +410,13 @@ class ComposerStaticInit581be9bc9aefa84d600f45076b714052
                 0 => __DIR__ . '/..' . '/mockery/mockery/library',
             ),
         ),
+        'L' => 
+        array (
+            'Lavary\\Menu\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/lavary/laravel-menu/src',
+            ),
+        ),
         'D' => 
         array (
             'Doctrine\\Common\\Lexer\\' => 
@@ -435,6 +442,8 @@ class ComposerStaticInit581be9bc9aefa84d600f45076b714052
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+        'App\\Http\\Controllers\\MenuController' => __DIR__ . '/../..' . '/app/Http/Controllers/MenuController.php',
+        'App\\Http\\Controllers\\ProductController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProductController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',
@@ -1986,6 +1995,13 @@ class ComposerStaticInit581be9bc9aefa84d600f45076b714052
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
         'Laravel\\Tinker\\TinkerCaster' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerCaster.php',
         'Laravel\\Tinker\\TinkerServiceProvider' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerServiceProvider.php',
+        'Lavary\\Menu\\Builder' => __DIR__ . '/..' . '/lavary/laravel-menu/src/Lavary/Menu/Builder.php',
+        'Lavary\\Menu\\Collection' => __DIR__ . '/..' . '/lavary/laravel-menu/src/Lavary/Menu/Collection.php',
+        'Lavary\\Menu\\Facade' => __DIR__ . '/..' . '/lavary/laravel-menu/src/Lavary/Menu/Facade.php',
+        'Lavary\\Menu\\Item' => __DIR__ . '/..' . '/lavary/laravel-menu/src/Lavary/Menu/Item.php',
+        'Lavary\\Menu\\Link' => __DIR__ . '/..' . '/lavary/laravel-menu/src/Lavary/Menu/Link.php',
+        'Lavary\\Menu\\Menu' => __DIR__ . '/..' . '/lavary/laravel-menu/src/Lavary/Menu/Menu.php',
+        'Lavary\\Menu\\ServiceProvider' => __DIR__ . '/..' . '/lavary/laravel-menu/src/Lavary/Menu/ServiceProvider.php',
         'Lcobucci\\JWT\\Builder' => __DIR__ . '/..' . '/lcobucci/jwt/src/Builder.php',
         'Lcobucci\\JWT\\Claim' => __DIR__ . '/..' . '/lcobucci/jwt/src/Claim.php',
         'Lcobucci\\JWT\\Claim\\Basic' => __DIR__ . '/..' . '/lcobucci/jwt/src/Claim/Basic.php',

@@ -29,12 +29,5 @@ Route::get('verify', 'HomeController@verify');
 //Route::get('single', 'HomeController@single');
 Route::get('single/{id}', 'HomeController@getProduct');
 
-//main Menu
-Route::get('/Categories', 'MenuController@Category');
-
-//kategooria
-Route::get('/Categories/cat/{id}', 'MenuController@catByID');
-
 //subcategory
 Route::get('/Categories/subcat/{id}', 'MenuController@subcatByID');
-
