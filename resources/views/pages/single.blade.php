@@ -9,41 +9,33 @@
 		<h2><a href="{{ url('/')}}">Home</a><label>/</label>Single</h2>
 	</div>
 </div>
+
 <div class="single">
 
 <div class="container">
+	@foreach($Subjects as $row)
+@if ($row['id'] == '3' )
 <div class="col-md-9">
 	<div class="col-md-5 grid">		
 		<div class="flexslider">
 			  <ul class="slides">
 			    <li data-thumb="images/si.jpg">
-			        <div class="thumb-image"> <img src="images/si.jpg" data-imagezoom="true" class="img-responsive"> </div>
+			        <div class="thumb-image"> <img src="{{$row['cover']}}" data-imagezoom="true" class="img-responsive"> </div>
 			    </li>
-			    <li data-thumb="images/si1.jpg">
-			         <div class="thumb-image"> <img src="images/si1.jpg" data-imagezoom="true" class="img-responsive"> </div>
-			    </li>
-			    <li data-thumb="images/si2.jpg">
-			       <div class="thumb-image"> <img src="images/si2.jpg" data-imagezoom="true" class="img-responsive"> </div>
-			    </li> 
 			  </ul>
 		</div>
 	</div>	
 <div class="col-md-7 single-top-in">
 						<div class="span_2_of_a1 simpleCart_shelfItem">
-				<h3>Toote nimetus</h3>
+				<h3>{{$row['name']}}</h3>
 				<p class="in-para"> Veel mingi toote nimetus või midagi mida lisada</p>
 			    <div class="price_single">
-				  <span class="reducedfrom item_price">$140.00</span>
+				  <span class="reducedfrom item_price">{{$row['price']}}$</span>
 				 <div class="clearfix"></div>
 				</div>
-				<h4 class="quick">Kiire ülevaade:</h4>
-				<p class="quick_desc"> See toode on selline ja selline, tal on sellised omadused ja ta on sellepärast hea ning mida iganes veel</p>
-			    <div class="wish-list">
-				 	<ul>
-				 		<li class="wish"><a href="#"><span class="glyphicon glyphicon-check" aria-hidden="true"></span>Add to Wishlist</a></li>
-				 	    <li class="compare"><a href="#"><span class="glyphicon glyphicon-resize-horizontal" aria-hidden="true"></span>Add to Compare</a></li>
-				 	</ul>
-				 </div>
+				<h4 class="quick">Ülevaade:</h4>
+				<p class="quick_desc"> {{$row['Description']}}</p>
+
 				 <div class="quantity"> 
 								<div class="quantity-select">                           
 									<div class="entry value-minus">&nbsp;</div>
@@ -76,7 +68,7 @@
 			 <nav class="nav-sidebar">
 		<ul class="nav tabs">
           <li class="active"><a href="#tab1" data-toggle="tab">Product Description</a></li>
-          <li class=""><a href="#tab2" data-toggle="tab">Additional Information</a></li> 
+          <li class=""><a href="#tab2" data-toggle="tab">Quantity</a></li> 
           <li class=""><a href="#tab3" data-toggle="tab">Reviews</a></li>  
 		</ul>
 	</nav>
@@ -130,49 +122,11 @@
 </div>
 <!----->
 
+@endif
+    @endforeach
 <div class="col-md-3 product-bottom product-at">
 			<!--categories-->
-				<div class=" rsidebar span_1_of_left">
-						<h4 class="cate">Categories</h4>
-							 <ul class="menu-drop">
-							<li class="item1"><a href="#">Men </a>
-								<ul class="cute">
-									<li class="subitem1"><a href="{{ url('/product')}}">Cute Kittens </a></li>
-									<li class="subitem2"><a href="{{ url('/product')}}">Strange Stuff </a></li>
-									<li class="subitem3"><a href="{{ url('/product')}}">Automatic Fails </a></li>
-								</ul>
-							</li>
-							<li class="item2"><a href="#">Women </a>
-								<ul class="cute">
-									<li class="subitem1"><a href="{{ url('/product')}}">Cute Kittens </a></li>
-									<li class="subitem2"><a href="{{ url('/product')}}">Strange Stuff </a></li>
-									<li class="subitem3"><a href="{{ url('/product')}}">Automatic Fails </a></li>
-								</ul>
-							</li>
-							<li class="item3"><a href="#">Kids</a>
-								<ul class="cute">
-									<li class="subitem1"><a href="{{ url('/product')}}">Cute Kittens </a></li>
-									<li class="subitem2"><a href="{{ url('/product')}}">Strange Stuff </a></li>
-									<li class="subitem3"><a href="{{ url('/product')}}">Automatic Fails</a></li>
-								</ul>
-							</li>
-							<li class="item4"><a href="#">Accessories</a>
-								<ul class="cute">
-									<li class="subitem1"><a href="{{ url('/product')}}">Cute Kittens </a></li>
-									<li class="subitem2"><a href="{{ url('/product')}}">Strange Stuff </a></li>
-									<li class="subitem3"><a href="{{ url('/product')}}">Automatic Fails</a></li>
-								</ul>
-							</li>
-									
-							<li class="item4"><a href="#">Shoes</a>
-								<ul class="cute">
-									<li class="subitem1"><a href="{{ url('/product')}}">Cute Kittens </a></li>
-									<li class="subitem2"><a href="{{ url('/product')}}">Strange Stuff </a></li>
-									<li class="subitem3"><a href="{{ url('/product')}}">Automatic Fails </a></li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+			
 				<!--initiate accordion-->
 						<script type="text/javascript">
 							$(function() {
@@ -194,57 +148,9 @@
 							});
 						</script>
 <!--//menu-->
- <section  class="sky-form">
-					<h4 class="cate">Discounts</h4>
-					 <div class="row row1 scroll-pane">
-						 <div class="col col-4">
-								<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>Upto - 10% (20)</label>
-						 </div>
-						 <div class="col col-4">
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>40% - 50% (5)</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>30% - 20% (7)</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>10% - 5% (2)</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Other(50)</label>
-						 </div>
-					 </div>
-				 </section> 				 				 
-				 
-					
-					 <!---->
-					 <section  class="sky-form">
-						<h4 class="cate">Type</h4>
-							<div class="row row1 scroll-pane">
-								<div class="col col-4">
-									<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>Sofa Cum Beds (30)</label>
-								</div>
-								<div class="col col-4">
-									<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Bags  (30)</label>
-									<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Caps & Hats (30)</label>
-									<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Jackets & Coats   (30)</label>
-									<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Jeans  (30)</label>
-									<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Shirts   (30)</label>
-									<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Sunglasses  (30)</label>
-									<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Swimwear  (30)</label>
-								</div>
-							</div>
-				   </section>
-				   		<section  class="sky-form">
-						<h4 class="cate">Brand</h4>
-							<div class="row row1 scroll-pane">
-								<div class="col col-4">
-									<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>Roadstar</label>
-								</div>
-								<div class="col col-4">
-									<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Levis</label>
-									<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Persol</label>
-									<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Nike</label>
-									<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Edwin</label>
-									<label class="checkbox"><input type="checkbox" name="checkbox" ><i></i>New Balance</label>
-									<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Paul Smith</label>
-									<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Ray-Ban</label>
-								</div>
-							</div>
-				   </section>		
+ 
+			
+				   	
 		</div>
 		<div class="clearfix"> </div>
 	</div>

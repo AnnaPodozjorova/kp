@@ -14,9 +14,8 @@
 // Route::get('/', function() {
 //     return view('welcome');
 // });
-
-Route::get('/', 'HomeController@index');
 Auth::routes();
+Route::get('/', 'HomeController@index');
 Route::get('login', 'HomeController@login');
 Route::get('Checkout', 'HomeController@checkout');
 Route::get('contact', 'HomeController@contact');
@@ -26,8 +25,6 @@ Route::get('register', 'HomeController@register');
 Route::get('wishlist', 'HomeController@wishlist');
 Route::get('home', 'HomeController@home');
 Route::get('verify', 'HomeController@verify');
-//Route::get('single', 'HomeController@single');
 Route::get('single/{id}', 'HomeController@getProduct');
-
 //subcategory
 Route::get('/Categories/subcat/{id}', 'MenuController@subcatByID');

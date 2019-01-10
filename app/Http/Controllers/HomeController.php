@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 use DB;
 use Illuminate\Http\Request;
 use App\Subject;
-use DB;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -44,14 +43,8 @@ class HomeController extends Controller
 
     public function product()
     {
-<<<<<<< HEAD
-      
         $Subjects= Subject::all()->toArray();
-        return view('pages.product', compact('Subjects'));
-=======
-    $Subjects= Subject::all()->toArray();
-    return view('pages.product', compact('Subjects'), $this->category(), $this->subCategory());
->>>>>>> 4b1b3ae65207068cfe84c372a41221027a0a250f
+        return view('pages.product', compact('Subjects'), $this->category(), $this->subCategory());
     }
 
     public function getProduct($id){
@@ -62,17 +55,12 @@ class HomeController extends Controller
     public function register() {
         return view('pages.register', $this->category(), $this->subCategory());
     }
-    public function wishlist() {
-        return view('pages.wishlist', $this->category(), $this->subCategory());
-    }
+
     public function home() {
         return view('pages.home', $this->category(), $this->subCategory());
     }
     public function verify() {
         return view('pages.verify', $this->category(), $this->subCategory());
     }
-
-    public function single(){
-        return view('pages.single', $this->category(), $this->subCategory());
-    }   
+  
 }
