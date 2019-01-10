@@ -43,4 +43,8 @@ class HomeController extends Controller
         return view('pages.verify');
     }
 
+    public function single(){
+        return view('pages.single');
+    }   
+
 }

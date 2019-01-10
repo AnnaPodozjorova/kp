@@ -1,12 +1,12 @@
 @extends('layouts.default')
 
-@section(content)
+@section('content')
 
 <div class="banner-top">
 	<div class="container">
 		<h1>Contact</h1>
 		<em></em>
-		<h2><a href="{{ url('/home')}}">Home</a><label>/</label>Contact</h2>
+		<h2><a href="{{ url('/')}}">Home</a><label>/</label>Contact</h2>
 	</div>
 </div>	
 		
@@ -15,9 +15,10 @@
 				<div class="contact-form">
 					<div class="container">
 					<div class="col-md-6 contact-left">
-						<h3>At vero eos et accusamus et iusto odio dignissimos ducimus qui </h3>
-						<p>Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas.
-						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas.At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas. </p>
+						<h3>Meiega kontakti saada on kõige kergem saata kiri. </h3>
+						<p>Kui sul on mingeid küsimusi mida soovid küsida, siis kirjuta meile julgelt kiri. Kirja saad kirjutada paremal pool olevasse kasti, täida vastavad väljad.
+							Kindlasti võid ka helistada meile veebipoodi, kuid siis telefoni võtab vastu poes olev inimene, kes parasjagu tööl on. Ta ei pruugi nii hästi teid informatsiooniga varustada, seega soovitame soojalt kirja kirjutada, kui on mingi kindlam küsimus.
+						</p>
 					
 			
 					<div class="address">
@@ -25,15 +26,14 @@
 							<i class="glyphicon glyphicon-map-marker"></i>
 							<div class="address1">
 								<h3>Address</h3>
-								<p>Lorem ipsum dolor,
-								TL 19034-88974</p>
+								<p>Järveküla tee 75, Kohtla-Järve, 30322</p>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
 						<div class=" address-grid ">
 							<i class="glyphicon glyphicon-phone"></i>
 							<div class="address1">
-							<h3>Our Phone:<h3>
+							<h3>Telefoni nr:<h3>
 								<p>+123456789</p>
 							</div>
 							<div class="clearfix"> </div>
@@ -42,37 +42,37 @@
 							<i class="glyphicon glyphicon-envelope"></i>
 							<div class="address1">
 							<h3>Email:</h3>
-								<p><a href="mailto:info@example.com"> Lorem@example.com</a></p>
+								<p><a href="mailto:info@example.com"> Veebipood@ttü.ee</a></p>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
 						<div class=" address-grid ">
 							<i class="glyphicon glyphicon-bell"></i>
 							<div class="address1">
-								<h3>Open Hours:</h3>
-								<p>Monday-Friday, 7AM-5PM</p>
+								<h3>Oleme avatud:</h3>
+								<p>Esmaspäev-Reede, 7AM-5PM</p>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
 </div>
 				</div>
 				<div class="col-md-6 contact-top">
-					<h3>Want to work with me?</h3>
+					<h3>Saada meile kiri!</h3>
 					<form>
 						<div>
-							<span>Your Name </span>		
+							<span>Sinu nimi </span>		
 							<input type="text" value="" >						
 						</div>
 						<div>
-							<span>Your Email </span>		
+							<span>Sinu E-mail </span>		
 							<input type="text" value="" >						
 						</div>
 						<div>
-							<span>Subject</span>		
+							<span>Teema millest soovid rääkida</span>		
 							<input type="text" value="" >	
 						</div>
 						<div>
-							<span>Your Message</span>		
+							<span>Sinu sõnum</span>		
 							<textarea> </textarea>	
 						</div>
 						<label class="hvr-skew-backward">
@@ -84,7 +84,7 @@
 		</div>
 		</div>
 		<div class="map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37494223.23909492!2d103!3d55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x453c569a896724fb%3A0x1409fdf86611f613!2sRussia!5e0!3m2!1sen!2sin!4v1415776049771"></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8123.561387883393!2d27.2910023!3d59.4015419!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xee3f812400317fbb!2sViru+College+of+Tallinn+University+of+Technology!5e0!3m2!1sen!2see!4v1547124070997" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
 	</div>
 

@@ -7,7 +7,7 @@
 	<div class="container">
 		<h1>Products</h1>
 		<em></em>
-		<h2><a href="{{ url('/home')}}">Home</a><label>/</label>Products</h2>
+		<h2><a href="{{ url('/')}}">Home</a><label>/</label>Products</h2>
 	</div>
 </div>
 	<!--content-->
@@ -22,13 +22,13 @@
 						<img src="images/pc.jpg" class="img-responsive" alt="">
 						<div class="zoom-icon ">
 						<a class="picture" href="images/pc.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox"><i class="glyphicon glyphicon-search icon "></i></a>
-						<a href="single.html"><i class="glyphicon glyphicon-menu-right icon"></i></a>
+						<a href="{{ url('/single')}}"><i class="glyphicon glyphicon-menu-right icon"></i></a>
 						</div>
 						</div>
 						<div class="mid-1">
 						<div class="women">
 						<div class="women-top">
-							<h6><a href="single.html">{{$row['name']}}</a></h6>
+							<h6><a href="{{ url('/single')}}">{{$row['name']}}</a></h6>
 							</div>
 							<div class="img item_add">
 								<a href="#"><img src="images/ca.png" alt=""></a>
