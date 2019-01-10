@@ -21,7 +21,7 @@
 					<div class="pro-img">
 						<img src="images/pc.jpg" class="img-responsive" alt="">
 						<div class="zoom-icon ">
-						<a class="picture" href="images/pc.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox"><i class="glyphicon glyphicon-search icon "></i></a>
+						<a class="picture" href="images/pc.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox"><i ></i></a>
 						<a href="single.html"><i class="glyphicon glyphicon-menu-right icon"></i></a>
 						</div>
 						</div>
@@ -31,7 +31,8 @@
 							<h6><a href="single.html">{{$row['name']}}</a></h6>
 							</div>
 							<div class="img item_add">
-								<a href="#"><img src="images/ca.png" alt=""></a>
+							<!--<a href="#"><img src="images/ca.png" alt=""></a>-->
+								<a href="#"><img src="{{$row['cover']}}" alt=""></a>
 							</div>
 							<div class="clearfix"></div>
 							</div>
@@ -80,10 +81,25 @@
 				</div>
 				<div class="clearfix"></div>
 			</div>
+
+
+			
 			</div>
 			<!--//brand-->
 			
-			
+			<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
 		</div>
 	<!--//content-->
 		<!--//footer-->

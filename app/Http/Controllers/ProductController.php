@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
 
-use App\Subject;
+class ProductController extends Controller {
 
-class ProductController extends Controller //klass ActorController laiendab Controller klassi
-{ 
-
- }
+   
+}

@@ -82,7 +82,6 @@
 			
 			<li><a class="color3" href="{{ url('/product')}}">Products</a></li>
 			<li><a class="color4" href="{{ url('/Error404')}}">About</a></li>
-            <li><a class="color5" href="typo.html">Short Codes</a></li>
             <li ><a class="color6" href="{{ url('/contact')}}">Contact</a></li>
         </ul>
      </div><!-- /.navbar-collapse -->
