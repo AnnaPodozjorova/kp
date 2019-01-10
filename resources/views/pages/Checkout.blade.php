@@ -6,7 +6,7 @@
 	<div class="container">
 		<h1>Checkout</h1>
 		<em></em>
-		<h2><a href="{{ url('/home')}}">Home</a><label>/</label>Checkout</h2>
+		<h2><a href="{{ url('/')}}">Home</a><label>/</label>Checkout</h2>
 	</div>
 </div>
 <!--login-->
@@ -49,9 +49,9 @@
 		  </tr>
 		  <tr class="cart-header">
 
-			<td class="ring-in"><a href="single.html" class="at-in"><img src="images/ch.jpg" class="img-responsive" alt=""></a>
+			<td class="ring-in"><a href="{{ url('/single')}}" class="at-in"><img src="images/ch.jpg" class="img-responsive" alt=""></a>
 			<div class="sed">
-				<h5><a href="single.html">Sed ut perspiciatis unde</a></h5>
+				<h5><a href="{{ url('/single')}}">Sed ut perspiciatis unde</a></h5>
 				<p>(At vero eos et accusamus et iusto odio dignissimos ducimus ) </p>
 			
 			</div>
@@ -63,9 +63,9 @@
 			<td class="add-check"><a class="item_add hvr-skew-backward" href="#">Add To Cart</a></td>
 		  </tr>
 		  <tr class="cart-header1">
-		  <td class="ring-in"><a href="single.html" class="at-in"><img src="images/ch2.jpg" class="img-responsive" alt=""></a>
+		  <td class="ring-in"><a href="{{ url('/single')}}" class="at-in"><img src="images/ch2.jpg" class="img-responsive" alt=""></a>
 			<div class="sed">
-				<h5><a href="single.html">Sed ut perspiciatis unde</a></h5>
+				<h5><a href="{{ url('/single')}}">Sed ut perspiciatis unde</a></h5>
 				<p>(At vero eos et accusamus et iusto odio dignissimos ducimus ) </p>
 			</div>
 			<div class="clearfix"> </div>
@@ -76,9 +76,9 @@
 			<td class="add-check"><a class="item_add hvr-skew-backward" href="#">Add To Cart</a></td>
 		  </tr>
 		  <tr class="cart-header2">
-		  <td class="ring-in"><a href="single.html" class="at-in"><img src="images/ch1.jpg" class="img-responsive" alt=""></a>
+		  <td class="ring-in"><a href="{{ url('/single')}}" class="at-in"><img src="images/ch1.jpg" class="img-responsive" alt=""></a>
 			<div class="sed">
-				<h5><a href="single.html">Sed ut perspiciatis unde</a></h5>
+				<h5><a href="{{ url('/single')}}">Sed ut perspiciatis unde</a></h5>
 				<p>(At vero eos et accusamus et iusto odio dignissimos ducimus ) </p>
 			</div>
 			<div class="clearfix"> </div>
@@ -93,7 +93,7 @@
 	</div>
 	</div>
 	<div class="produced">
-	<a href="single.html" class="hvr-skew-backward">Produced To Buy</a>
+	<a href="{{ url('/single')}}" class="hvr-skew-backward">Produced To Buy</a>
 	 </div>
 </div>
 </div>

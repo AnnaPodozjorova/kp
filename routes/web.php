@@ -26,6 +26,7 @@ Route::get('register', 'HomeController@register');
 Route::get('wishlist', 'HomeController@wishlist');
 Route::get('home', 'HomeController@home');
 Route::get('verify', 'HomeController@verify');
+Route::get('single', 'HomeController@single');
 
 
 //main Menu
