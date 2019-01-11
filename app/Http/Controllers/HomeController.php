@@ -90,10 +90,9 @@ class HomeController extends Controller
 
         $categories = DB::select('select * from _category');
         $subcategories = DB::select('select * from _sub_category'); 
-        return view('search-results')->with('subjects', $subjects,
-            [
+        return view('search-results', compact('subjects'))->with([
+             'categories' => $categories,
             'subcategories' => $subcategories,
-            'categories' => $categories
         ]);
     }
 }

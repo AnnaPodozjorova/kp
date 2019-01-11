@@ -55,6 +55,35 @@
         <ul class="nav navbar-nav nav_1">
             <li><a class="color" href="{{ url('/')}}">Home</a></li>
         
+       
+			<li class="dropdown mega-dropdown active">
+			@foreach ($categories as $category)
+				<li>
+			    <a class="color1" href="" class="dropdown-toggle" data-toggle="dropdown">{{$category->name}} <span class="caret"></span></a>				
+				<div class="dropdown-menu ">
+                    <div class="menu-top">
+						<div class="col1">
+							<div class="h_nav">
+							
+									@foreach ($subcategories as $subcategory)
+              						 @if($category->id == $subcategory->idCat)
+               							<a href="{{URL::to('Categories/subcat/'.$subcategory->id)}}">
+                  						{!! $subcategory->name !!} </a>
+               						@else 
+               						@endif
+									@endforeach
+							</div>							
+						</div>
+				
+						<div class="col1 col5">
+						<img src="images/me.png" class="img-responsive" alt="">
+						</div>
+						<div class="clearfix"></div>
+					</div>                  
+				</div>	
+			</li>
+				@endforeach				
+			</li> <!--End dropdown category -->
 
 			
 			<li><a class="color3" href="{{ url('/product')}}">Products</a></li>
