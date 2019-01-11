@@ -31,7 +31,7 @@
 <div class="col-md-7 single-top-in">
 						<div class="span_2_of_a1 simpleCart_shelfItem">
 				<h3>{{$row['name']}}</h3>
-				<p class="in-para"> Veel mingi toote nimetus või midagi mida lisada</p>
+				<p class="in-para"></p>
 			    <div class="price_single">
 				  <span class="reducedfrom item_price">{{$row['price']}}$</span>
 				 <div class="clearfix"></div>
