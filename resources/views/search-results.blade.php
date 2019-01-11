@@ -53,55 +53,16 @@
 					@endforeach
 	
 			
-<!--//menu-->
- 	 				 
-				 
-					
-					 <!---->
-					
-				   		
-		</div>
+</div>
 			<div class="clearfix"></div>
 			</div>
-				<!--products-->
-			
-			<!--//products-->
-		<!--brand-->
-		<div class="container">
-			<div class="brand">
-				<div class="col-md-3 brand-grid">
-					<img src="images/ic.png" class="img-responsive" alt="">
-				</div>
-				<div class="col-md-3 brand-grid">
-					<img src="images/ic1.png" class="img-responsive" alt="">
-				</div>
-				<div class="col-md-3 brand-grid">
-					<img src="images/ic2.png" class="img-responsive" alt="">
-				</div>
-				<div class="col-md-3 brand-grid">
-					<img src="images/ic3.png" class="img-responsive" alt="">
-				</div>
-				<div class="clearfix"></div>
-			</div>
+				<!--pagination-->
+				<div class="text-center">
+	{{$subjects->links()}}
+</div>
 
 
-			
-			</div>
-			<!--//brand-->
-			
-			<nav aria-label="Page navigation example">
-  <ul class="pagination justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="#" tabindex="-1">Previous</a>
-    </li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item">
-      <a class="page-link" href="#">Next</a>
-    </li>
-  </ul>
-</nav>
+
 		</div>
 	<!--//content-->
 		<!--//footer-->

@@ -43,9 +43,9 @@ class HomeController extends Controller
 
 
     public function product()
-    {
-        $Subjects= Subject::all()->toArray();
-        //et menyyd product lehel n2ha
+    {   
+       // $Subjects= Subject::all()->toArray();
+        $Subjects = Subject::paginate(3);
         $categories = DB::select('select * from _category');
         $subcategories = DB::select('select * from _sub_category');
         return view('pages.product', compact('Subjects'))->with([
@@ -56,9 +56,10 @@ class HomeController extends Controller
 
     public function getProduct($id){
         $Subjects=\App\Subject::find($id);
+        $Products = Subject::all()->toArray();
         $categories = DB::select('select * from _category');
         $subcategories = DB::select('select * from _sub_category');
-        return view('pages.single', compact('Subjects'))->with([
+        return view('pages.single', compact('Subjects', 'Products'))->with([
             'subcategories' => $subcategories,
             'categories' => $categories
         ]);

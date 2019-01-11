@@ -16,8 +16,8 @@
 <div class="single">
 
 <div class="container">
-	@foreach($Subjects as $row)
-<!-- @if ($row['id'] == request()->route('id')) -->
+	@foreach($Products as $row)
+	@if ($row['id'] == request()->route('id'))
 <div class="col-md-9">
 	<div class="col-md-5 grid">		
 		<div class="flexslider">
@@ -37,7 +37,7 @@
 				 <div class="clearfix"></div>
 				</div>
 				<h4 class="quick">Ülevaade:</h4>
-				<p class="quick_desc"> {{$row['Description']}}</p>
+				<p class="quick_desc"> {{$row['description']}}</p>
 
 				 <div class="quantity"> 
 								<div class="quantity-select">                           
@@ -125,7 +125,7 @@
 </div>
 <!----->
 
-<!-- @endif -->
+@endif
     @endforeach
 <div class="col-md-3 product-bottom product-at">
 			<!--categories-->
