@@ -12,7 +12,7 @@
 	<div class="container">
 		<h1>{{$subcategory->name}}</h1>
 		<em></em>
-		<h2><a href="{{ url('/')}}">Home</a><label>/</label>{{$subcategory->name}}</h2>
+		<h2><a href="{{ url('/')}}">Kunstipood</a><label>/</label>{{$subcategory->name}}</h2>
 	</div>
 </div>
 
