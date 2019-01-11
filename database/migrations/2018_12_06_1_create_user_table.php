@@ -21,6 +21,7 @@ class CreateUserTable extends Migration
             $table->string('address', 50);
             $table->string('email', 50)->unique();
             $table->string('password',255);
+            $table->string('type')->default('default');
             $table->rememberToken(); //rememberToken kasutatakse 'remember me' sisse logimisel
             $table->timestamps();//lisab  created_at ja updated_at veerge
         });

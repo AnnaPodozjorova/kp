@@ -13,7 +13,8 @@ class User extends Authenticatable
     protected $primaryKey = 'id';
     public $timestamps = false;
     use Notifiable;
-
+    const ADMIN_TYPE = 'admin';
+    const DEFAULT_TYPE = 'default';
     public function Card()
     {
         return $this->hasMany('App\Card');
@@ -28,7 +29,10 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\Comments');
     }
-
+    
+    public function isAdmin()    {        
+        return $this->type === self::ADMIN_TYPE;    
+    }
     /**
      * The attributes that are mass assignable.
      *

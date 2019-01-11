@@ -4,7 +4,9 @@ USE kunstipood;
 INSERT INTO users (name, lastname, telefon, address, email, password)
 	VALUES('Ivan', 'Orav', '+37212345678', 'kajaoja 2', 'ivan.orav@gmail.com', 'parool'),
 ('Mari', 'Mets', '+37211111111', 'metsa tee 6', 'mmets@gmail.com', 'parool1'),
-('Mart', 'Mets', '+37212121212', 'metsa tee 6', 'martmets@mail.ee', 'parool');
+('Mart', 'Mets', '+37212121212', 'metsa tee 6', 'martmets@mail.ee', 'parool'),
+('admin', 'admin', '+37212121212', 'metsa tee 6', 'admin@admin.ee', 'administrator2019')
+;
 
 INSERT INTO _card_type VALUES 
 (1,'silver', 5),
@@ -34,11 +36,6 @@ INSERT INTO subject VALUES
     'https://vunder.ee/media/4393-340x255.jpg', 0, 11),
 (4, 3,'AKRÜÜLKOMPLEKT "SIMPLY" 24X12ML DALER-ROWNEY', 'Need värvid on võimalik kasutada otse tuubist ning nad sobivad kogu kunstipindadele nagu paber, papp ja lõuend.', 
     'https://vunder.ee/media/4929-340x255.jpg', 9, 14.7);
-
-INSERT INTO _comments VALUES 
-(1, 1, 3,'v2ga hea v2rv', '2019-1-02 01:00:15'),
-(2, 2, 1,'mingi tekst jdlkldkfjgaldkfg;lfdkag;fldkgdfg.', '2019-1-04 01:00:15'),
-(3, 2, 3,'jah', '2019-1-04 04:04:45');
 
 INSERT INTO _order VALUES 
 (1, '2019-1-01 07:07:07', 'kajaoja 2', 0),

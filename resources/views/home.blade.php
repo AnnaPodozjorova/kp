@@ -8,12 +8,11 @@
 <div class="container">
 <section class="rw-wrapper">
 				<h1 class="rw-sentence">
-					<span>Fine &amp; Smooth</span>
+					<span>Kunstipood</span>
 					<div class="rw-words rw-words-1">
 						<span>Head tooted</span>
                         <span>Odavad hinnad</span>
-                        <span>Projekt on väga nõme</span>
-                        <span>Veeel midagi huvitavat</span>
+                        <span>Head soodustused</span>
 					</div>
 					<div class="rw-words rw-words-2">
 						<span>Hea teenindus</span>

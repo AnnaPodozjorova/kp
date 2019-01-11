@@ -16,6 +16,10 @@
 // });
 Auth::routes();
 Route::get('/', 'HomeController@index');
+Route::get('/admin', 'AdminController@admin')    
+    ->middleware('is_admin')    
+    ->name('admin');
+
 Route::get('login', 'HomeController@login');
 Route::get('Checkout', 'HomeController@checkout');
 Route::get('contact', 'HomeController@contact');
@@ -26,6 +30,7 @@ Route::get('wishlist', 'HomeController@wishlist');
 Route::get('home', 'HomeController@home');
 Route::get('verify', 'HomeController@verify');
 Route::get('single/{id}', 'HomeController@getProduct');
+
 //subcategory
 Route::get('/Categories/subcat/{id}', 'MenuController@subcatByID');
 //search subject

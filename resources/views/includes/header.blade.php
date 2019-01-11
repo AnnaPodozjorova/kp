@@ -63,7 +63,7 @@
 				<div class="dropdown-menu ">
                     <div class="menu-top">
 						<div class="col1">
-							<div class="h_nav">
+							<div class="h_nav"> 
 							
 									@foreach ($subcategories as $subcategory)
               						 @if($category->id == $subcategory->idCat)
