@@ -100,66 +100,17 @@
  </div>
   
   </div>
-  <div class="clearfix"></div>
   </div>
-			<!---->	
 </div>
-<!----->
 
 @endif
     @endforeach
-<div class="col-md-3 product-bottom product-at">
-			<!--categories-->
-			
-				<!--initiate accordion-->
-						<script type="text/javascript">
-							$(function() {
-							    var menu_ul = $('.menu-drop > li > ul'),
-							           menu_a  = $('.menu-drop > li > a');
-							    menu_ul.hide();
-							    menu_a.click(function(e) {
-							        e.preventDefault();
-							        if(!$(this).hasClass('active')) {
-							            menu_a.removeClass('active');
-							            menu_ul.filter(':visible').slideUp('normal');
-							            $(this).addClass('active').next().stop(true,true).slideDown('normal');
-							        } else {
-							            $(this).removeClass('active');
-							            $(this).next().stop(true,true).slideUp('normal');
-							        }
-							    });
-							
-							});
-						</script>
-<!--//menu-->
- 
-			
-				   	
-		</div>
-		<div class="clearfix"> </div>
 	</div>
 	
-			<!--brand-->
-		<div class="container">
 			<div class="brand">
-				<div class="col-md-3 brand-grid">
-					<img src="images/ic.png" class="img-responsive" alt="">
-				</div>
-				<div class="col-md-3 brand-grid">
-					<img src="images/ic1.png" class="img-responsive" alt="">
-				</div>
-				<div class="col-md-3 brand-grid">
-					<img src="images/ic2.png" class="img-responsive" alt="">
-				</div>
-				<div class="col-md-3 brand-grid">
-					<img src="images/ic3.png" class="img-responsive" alt="">
-				</div>
-				<div class="clearfix"></div>
 			</div>
-			</div>
-			<!--//brand-->
 		</div>	
 		
-
+	@include('particals.might-like')
 
 @stop

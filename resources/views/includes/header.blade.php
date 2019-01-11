@@ -103,8 +103,8 @@
 							<span class="simpleCart_total"></span></div>
 							<img src="images/cart.png" alt=""/></h3>
 						</a>
-						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
-
+						<a  href="{{route('cart.index')}}" class="glyphicon glyphicon-shopping-cart" color="black">Cart:<span class="cart-count"> <span>4</span></span></a>
+						</a>
 					</div>
 					<div class="clearfix"> </div>
 					

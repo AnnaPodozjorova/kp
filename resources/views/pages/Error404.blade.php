@@ -22,7 +22,7 @@
 	</div>
 <!--//login-->
 
-			<!--brand-->
+			<!--brand-->s
 		<div class="container">
 			<div class="brand">
 				<div class="col-md-3 brand-grid">

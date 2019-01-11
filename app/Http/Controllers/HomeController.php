@@ -21,6 +21,7 @@ class HomeController extends Controller
     }
 
     public function index() {
+        
         return view('home', $this->category(), $this->subCategory());
     }
 
@@ -44,7 +45,6 @@ class HomeController extends Controller
 
     public function product()
     {   
-       // $Subjects= Subject::all()->toArray();
         $Subjects = Subject::paginate(3);
         $categories = DB::select('select * from _category');
         $subcategories = DB::select('select * from _sub_category');
@@ -55,11 +55,13 @@ class HomeController extends Controller
     }
 
     public function getProduct($id){
+         $mightAlsoLike = Subject::mightAlsoLike()->get();
+
         $Subjects=\App\Subject::find($id);
         $Products = Subject::all()->toArray();
         $categories = DB::select('select * from _category');
         $subcategories = DB::select('select * from _sub_category');
-        return view('pages.single', compact('Subjects', 'Products'))->with([
+        return view('pages.single', compact('Subjects', 'Products'), compact('mightAlsoLike'))->with([
             'subcategories' => $subcategories,
             'categories' => $categories
         ]);

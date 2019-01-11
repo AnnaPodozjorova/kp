@@ -19,8 +19,6 @@ class CreateCartTable extends Migration
             $table->foreign('IDSubject')->references('id')->on('subject');
             $table->integer('Quantity');
             $table->decimal('Total');
-            $table->integer('IDBill')->unsigned()->index();
-            $table->foreign('IDBill')->references('id')->on('bill');
             $table->Timestamps();
         });
 
