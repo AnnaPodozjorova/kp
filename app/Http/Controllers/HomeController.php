@@ -41,15 +41,28 @@ class HomeController extends Controller
         return view('pages.Error404', $this->category(), $this->subCategory());
     }
 
+
     public function product()
     {
         $Subjects= Subject::all()->toArray();
-        return view('pages.product', compact('Subjects'), $this->category(), $this->subCategory());
+        //et menyyd product lehel n2ha
+        $categories = DB::select('select * from _category');
+        $subcategories = DB::select('select * from _sub_category');
+        return view('pages.product', compact('Subjects'))->with([
+            'subcategories' => $subcategories,
+            'categories' => $categories
+        ]);
     }
 
     public function getProduct($id){
         $Subjects=\App\Subject::find($id);
-        return view('pages.single', compact('Subjects'));
+        $categories = DB::select('select * from _category');
+        $subcategories = DB::select('select * from _sub_category');
+        return view('pages.single', compact('Subjects'))->with([
+            'subcategories' => $subcategories,
+            'categories' => $categories
+        ]);
+        
     }
 
     public function register() {
@@ -62,5 +75,25 @@ class HomeController extends Controller
     public function verify() {
         return view('pages.verify', $this->category(), $this->subCategory());
     }
+
   
+    public function search(Request $request) {
+        //otsingus v2hemalt 3 t2hte
+        $request->validate([
+            'query' => 'required|min:3',
+        ]);
+
+        $query = $request->input('query');
+        $subjects = Subject::where('name', 'like', "%$query%")
+                            ->orWhere('description', 'like', "%$query%")
+                            ->paginate(10); //10 subject yhel lehel
+
+        $categories = DB::select('select * from _category');
+        $subcategories = DB::select('select * from _sub_category'); 
+        return view('search-results')->with('subjects', $subjects,
+            [
+            'subcategories' => $subcategories,
+            'categories' => $categories
+        ]);
+    }
 }

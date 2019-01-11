@@ -1,6 +1,9 @@
 @extends('layouts.default')
 
 @section('content')
+<!--Air message -->
+@include('particals.airMessage')
+
 <div class="banner">
 <div class="container">
 <section class="rw-wrapper">

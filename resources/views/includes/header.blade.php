@@ -66,12 +66,7 @@
 </nav>
 			</div>
 			<div class="col-sm-2 search-right">
-				<ul class="heart">
-				<li>
-				<a href="{{ url('/wishlist')}}" >
-				<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-				</a></li>
-				<li><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i></a></li>
+			@include('particals.search')
 					</ul>
 					<div class="cart box_1">
 						<a href="{{ url('/checkout')}}">
@@ -89,16 +84,6 @@
 						<!---pop-up-box---->					  
 			<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
 			<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
-			<!---//pop-up-box---->
-			<div id="small-dialog" class="mfp-hide">
-				<div class="search-top">
-					<div class="login-search">
-						<input type="submit" value="">
-						<input type="text" value="Search.." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search..';}">		
-					</div>
-					<p>Shopin</p>
-				</div>				
-			</div>
 		 <script>
 			$(document).ready(function() {
 			$('.popup-with-zoom-anim').magnificPopup({

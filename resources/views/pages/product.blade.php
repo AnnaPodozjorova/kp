@@ -1,6 +1,9 @@
 @extends('layouts.default')
 
+
 @section('content')
+<!--Air message -->
+@include('particals.airMessage')
 
  <!--banner-->
 <div class="banner-top">
@@ -10,9 +13,11 @@
 		<h2><a href="{{ url('/')}}">Home</a><label>/</label>Products</h2>
 	</div>
 </div>
+
 	<!--content-->
 		<div class="product">
 			<div class="container">
+
 			<div class="col-md-15">
 				<div class="mid-popular">
 				@foreach($Subjects as $row)

@@ -28,3 +28,6 @@ Route::get('verify', 'HomeController@verify');
 Route::get('single/{id}', 'HomeController@getProduct');
 //subcategory
 Route::get('/Categories/subcat/{id}', 'MenuController@subcatByID');
+
+//search subject
+Route::get('/search', 'HomeController@search')->name('search');

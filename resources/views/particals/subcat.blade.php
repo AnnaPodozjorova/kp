@@ -2,6 +2,8 @@
 @extends('layouts.default')
 
 @section('content')
+<!--Air message -->
+@include('particals.airMessage')
 
 <h1 class="text-center ">{{$subcategory->name}}</h1>
       

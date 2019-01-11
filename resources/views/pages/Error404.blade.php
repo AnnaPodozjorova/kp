@@ -1,6 +1,8 @@
 @extends('layouts.default')
 
 @section('content')
+<!--Air message -->
+@include('particals.airMessage')
 
  <!--banner-->
 <div class="banner-top">
