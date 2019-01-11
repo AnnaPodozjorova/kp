@@ -17,7 +17,7 @@
 		<div class="four">
 		<h3>404</h3>
 		<p>Sorry! Evidently the document you were looking for has either been moved or no longer exist.</p>
-		<a href="{{ url('/home')}}" class="hvr-skew-backward">Back To Home</a>
+		<a href="{{ url('/')}}" class="hvr-skew-backward">Back To Home</a>
 		</div>
 	</div>
 <!--//login-->

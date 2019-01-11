@@ -31,7 +31,7 @@
 						<div class="zoom-icon ">
 						<a class="picture" href="images/pc.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox"></i></a>
                         <!-- url to single.blade(single MenuController'is peab olema)-->
-						<a href="{{ url('/product')}}"><i class="glyphicon glyphicon-menu-right icon"></i></a>
+						<a href="{{URL::to('/single/'.$subject->id)}}"><i class="glyphicon glyphicon-menu-right icon"></i></a>
 						</div>
 						</div>
 						<div class="mid-1">
