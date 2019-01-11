@@ -3,12 +3,12 @@
 				<div class="container">
 					<div class="col-md-5 footer-middle-in">
 						<!-- <a href="{{ url('/home')}}"><img src="images/log.png" alt=""></a> !-->
-						<h6>About us</h6>
+						<h6>Meist</h6>
 						<p>At Kunstipood, we are convinced that the digital space is an invaluable tool for bringing transparency and equity to the art market. </p>
 					</div>
 
 					<div class="col-md-5 footer-middle-in">
-						<h6>Contact</h6>
+						<h6>Kontakt</h6>
 						<ul class=" in">
 							<li><a>Jõhvi Punane Tee 23 </a></li>
 							<li><a href="{{ url('/login')}}">Tel: +372 12458945</a></li>

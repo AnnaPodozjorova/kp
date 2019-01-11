@@ -45,7 +45,7 @@ class HomeController extends Controller
 
     public function product()
     {   
-        $Subjects = Subject::paginate(3);
+        $Subjects = Subject::paginate(8);
         $categories = DB::select('select * from _category');
         $subcategories = DB::select('select * from _sub_category');
         return view('pages.product', compact('Subjects'))->with([

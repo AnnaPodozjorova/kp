@@ -13,17 +13,21 @@
 		<div class="container">
 		<div class="col-sm-5 col-md-offset-2  header-login">
 					<ul >
-						<li><a href="{{ url('/login')}}">Login</a></li>
-						<li><a href="{{ url('/register')}}">Register</a></li>
-						<li><a href="{{ url('/Checkout')}}">Checkout</a></li>
+						<li><a href="{{ url('/login')}}">Siene</a></li>
+						<li><a href="{{ url('/register')}}">Reristreeru</a></li>
 						
 					</ul>
 				</div>
 				
 			<div class="col-sm-5 header-social">		
 					<ul >
+
 						<li><a href="{{ url('/cart')}}" ><i class="glyphicon glyphicon-shopping-cart" ></i></a></li>
-						<li><a href="{{ url('/cart')}}" ><i> Cart</i></a></li>
+						<li><a href="{{ url('/cart')}}" ><i> Ostukorv</i></a></li>
+						<li><a href="#" ><i ></i></a></li>
+						<li><a href="#" ><i ></i></a></li>
+						<li><a href="{{ url('/Checkout')}}" ><i> Checkout</i></a></li>
+						<li><a href="#" ><i ></i></a></li>
 					</ul>
 					
 			</div>
@@ -51,7 +55,7 @@
    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
         <ul class="nav navbar-nav nav_1">
-            <li><a class="color" href="{{ url('/')}}">Home</a></li>
+            <li><a class="color" href="{{ url('/')}}">Home	</a></li>
         
        
 			<li class="dropdown mega-dropdown active">
@@ -84,9 +88,9 @@
 			</li> <!--End dropdown category -->
 
 			
-			<li><a class="color3" href="{{ url('/product')}}">Products</a></li>
+			<li><a class="color3" href="{{ url('/product')}}">Tooted</a></li>
 			<li><a class="color4" href="{{ url('/Error404')}}">About</a></li>
-            <li ><a class="color6" href="{{ url('/contact')}}">Contact</a></li>
+            <li ><a class="color6" href="{{ url('/contact')}}">Kontakt</a></li>
         </ul>
      </div><!-- /.navbar-collapse -->
 

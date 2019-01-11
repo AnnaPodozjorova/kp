@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB;
 use App\Http\Requests;
+use App\Subject;
 use App\Http\Controllers\Controller;
 
 class MenuController extends Controller {
@@ -20,14 +21,13 @@ class MenuController extends Controller {
       //ubcategory Id, subject info
       public function subcatByID($id)
       {
+         $Subjects = Subject::all()->toArray();
          $subcategory=\App\SubCategory::find($id);
          $categories = DB::select('select * from _category');
          $subcategories = DB::select('select * from _sub_category');
-         $subjects = DB::select('select * from subject');
-        return view('particals.subcat   ', compact('subcategory'))->with([
+        return view('particals.subcat   ', compact('subcategory'), compact('Subjects'))->with([
             'categories' => $categories,
-            'subcategories'=>$subcategories,
-            'subjects' => $subjects
+            'subcategories'=>$subcategories
         ]); 
       }  
    

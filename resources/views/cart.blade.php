@@ -6,7 +6,7 @@
 
 <div class="banner-top">
 	<div class="container">
-		<h1>Cart</h1>
+		<h1>Ostukorv</h1>
 		<em></em>
 		
 	</div>
@@ -16,10 +16,10 @@
 <table id="cart" class="table table-hover table-condensed">
         <thead>
         <tr>
-            <th style="width:50%">Product</th>
-            <th style="width:10%">Price</th>
-            <th style="width:8%">Quantity</th>
-            <th style="width:22%" class="text-center">Subtotal</th>
+            <th style="width:50%">Toode</th>
+            <th style="width:10%">Hind</th>
+            <th style="width:8%">Kogus</th>
+            <th style="width:22%" class="text-center">Summa</th>
             <th style="width:10%"></th>
         </tr>
         </thead>

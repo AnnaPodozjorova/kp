@@ -14,47 +14,21 @@
 	</div>
 </div>
 
-	<!--content-->
-		<div class="product">
-			<div class="container">
+<div class="productions-section">
+    <div class="container">
+        <div class="productions-grid">
+            @foreach ($Subjects as $product)
+                <a href="{{URL::to('/single/'.$product['id'])}}" class="productions-product">
+                    <img src="{{$product['cover']}}" alt=""  height="150" width="170">
+                    <div class="productions-product-name">{{ $product->name }}</div>
+					<div class="productions-product-name">{{ $product->price }}$</div>
 
-			<div class="col-md-15">
-				<div class="mid-popular">
-				@foreach($Subjects as $row)
-					<div class="col-md-4 item-grid1 simpleCart_shelfItem">
-					<div class=" mid-pop">
-					<div class="pro-img">
-						<img src="images/pc.jpg" class="img-responsive" alt="">
-						<div class="zoom-icon ">
-						<a class="picture" href="images/pc.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox"></i></a>
-						<a href="{{URL::to('/single/'.$row['id'])}}"><i class="glyphicon glyphicon-menu-right icon"></i></a>
-						</div>
-						</div>
-						<div class="mid-1">
-						<div class="women">
-						<div class="women-top">
-							<h6><a > {{$row['name']}}</a></h6>
-							</div>
-							<div class="img item_add">
-							<a href="#"><img src="images/ca.png" alt=""></a>
-								<a href="#"><img src="{{$row['cover']}}" alt=""></a>
-							</div>
-							<div class="clearfix"></div>
-							</div>
-							<div class="mid-2">
-								<p ><em class="item_price">{{$row['price']}}$</em></p>
-								  <div class="block">
-									<div class="starbox small ghosting"> </div>
-								</div>
-								
-								<div class="clearfix"></div>
-							</div>
-						
-						</div>
-					</div>
-					</div>
-					@endforeach
-   		
+                </a>
+            @endforeach
+        </div>
+    </div>
+</div>
+
 		</div>
 			<div class="clearfix"></div>
 			</div>

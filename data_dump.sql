@@ -41,7 +41,12 @@ INSERT INTO subject VALUES
 (6, 1,'Stabilo 8830-1 tindipliiats Point 88 30 värvi', 'Stabilo tindipliiats Point 88 on peene fiiberotsaga.Sobivad hästi kirjutamiseks, joonistamiseks, visandamiseka. Ideaalne töötamiseks trafareti ja joonlauaga.', 
     'https://www.shoppa.ee/i/jbvx/products/580x580/1/5/8/5/1585452_126920.jpg', 22, 28.80),
 (7, 1,'LAKK/KATTEGA VÄRVILISTE PLIIATSITE KOMPLEKT "PROGRESSO" 6 TK', 'Kõrgkvaliteetsed värvipliiatsid ilma puiduta.. Kaetud lakiga.', 
-    'https://kunstjahobi.ee/media/catalog/product/cache/3/image/650x/040ec09b1e35df139433887a97daa66f/2/1/2146_1.jpg', 15, 2.56);
+    'https://kunstjahobi.ee/media/catalog/product/cache/3/image/650x/040ec09b1e35df139433887a97daa66f/2/1/2146_1.jpg', 15, 2.56),
+(8, 1,'VÄRVILISTE PLIIATSITE KOMPLEKT "STUDIO" 12 TK', ' ', 
+    'https://kunstjahobi.ee/media/catalog/product/cache/3/image/650x/040ec09b1e35df139433887a97daa66f/9/2/9268_1.jpg', 5, 3.96),
+(9, 1,'Maped harilik pliiats BlackPeps 2B 3tk', 'Kõrgekvaliteediline pliiats tavakasutuseks, mis vastab kõigile laste või täiskasvanute vajadustele. Kolmnurkse kuju tõttu on seda mugavam käes hoida', 
+    'https://www.shoppa.ee/i/jbvx/products/580x580/2/3/2/6/2326934_257511.jpg', 15, 1.70);
+
 
 INSERT INTO _order VALUES 
 (1, '2019-1-01 07:07:07', 'kajaoja 2', 0),
