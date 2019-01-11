@@ -95,15 +95,10 @@
 </nav>
 			</div>
 			<div class="col-sm-2 search-right">
-			@include('particals.search')
+			
 					</ul>
 					<div class="cart box_1">
-						<a href="{{ url('/checkout')}}">
-						<h3> <div class="total">
-							<span class="simpleCart_total"></span></div>
-							<img src="images/cart.png" alt=""/></h3>
-						</a>
-						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
+                     @include('particals.search')
 
 					</div>
 					<div class="clearfix"> </div>

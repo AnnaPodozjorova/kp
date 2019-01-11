@@ -7,9 +7,9 @@
 
 <div class="banner-top">
 	<div class="container">
-		<h1>Single</h1>
+		<h1>Kunstipood</h1>
 		<em></em>
-		<h2><a href="{{ url('/')}}">Home</a><label>/</label>Single</h2>
+		<h2><a href="{{ url('/')}}">Home</a><label>/</label>Product</h2>
 	</div>
 </div>
 
@@ -18,7 +18,7 @@
 <div class="container">
 	@foreach($Products as $row)
 	@if ($row['id'] == request()->route('id'))
-<div class="col-md-9">
+<div class="col-md-15">
 	<div class="col-md-5 grid">		
 		<div class="flexslider">
 			  <ul class="slides">
