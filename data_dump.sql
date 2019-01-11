@@ -35,7 +35,13 @@ INSERT INTO subject VALUES
 (3, 2,'AKVARELLI KOMPLEKT "SONET" 12X10ML, ST.-PETERBURG', 'Akvarellvärvid seeriast "Sonett" on mõeldud maalimiseks, omavad intensiivset ja puhast värvigammat.', 
     'https://vunder.ee/media/4393-340x255.jpg', 0, 11),
 (4, 3,'AKRÜÜLKOMPLEKT "SIMPLY" 24X12ML DALER-ROWNEY', 'Need värvid on võimalik kasutada otse tuubist ning nad sobivad kogu kunstipindadele nagu paber, papp ja lõuend.', 
-    'https://vunder.ee/media/4929-340x255.jpg', 9, 14.7);
+    'https://vunder.ee/media/4929-340x255.jpg', 9, 14.7),
+(5, 1,'Harilik pliiats HB RVS Feathers', ' ', 
+    'https://meedia.apollo.ee/media/catalog/product/cache/1/image/17f82f742ffe127f42dca9de82fb58b1/4/0/4003273600003_10.jpg', 9, 1.25),
+(6, 1,'Stabilo 8830-1 tindipliiats Point 88 30 värvi', 'Stabilo tindipliiats Point 88 on peene fiiberotsaga.Sobivad hästi kirjutamiseks, joonistamiseks, visandamiseka. Ideaalne töötamiseks trafareti ja joonlauaga.', 
+    'https://www.shoppa.ee/i/jbvx/products/580x580/1/5/8/5/1585452_126920.jpg', 22, 28.80),
+(7, 1,'LAKK/KATTEGA VÄRVILISTE PLIIATSITE KOMPLEKT "PROGRESSO" 6 TK', 'Kõrgkvaliteetsed värvipliiatsid ilma puiduta.. Kaetud lakiga.', 
+    'https://kunstjahobi.ee/media/catalog/product/cache/3/image/650x/040ec09b1e35df139433887a97daa66f/2/1/2146_1.jpg', 15, 2.56);
 
 INSERT INTO _order VALUES 
 (1, '2019-1-01 07:07:07', 'kajaoja 2', 0),
