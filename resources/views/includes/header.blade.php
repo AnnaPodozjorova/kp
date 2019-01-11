@@ -16,16 +16,14 @@
 						<li><a href="{{ url('/login')}}">Login</a></li>
 						<li><a href="{{ url('/register')}}">Register</a></li>
 						<li><a href="{{ url('/Checkout')}}">Checkout</a></li>
+						
 					</ul>
 				</div>
 				
 			<div class="col-sm-5 header-social">		
 					<ul >
-						<li><a href="#"><i></i></a></li>
-						<li><a href="#"><i class="ic1"></i></a></li>
-						<li><a href="#"><i class="ic2"></i></a></li>
-						<li><a href="#"><i class="ic3"></i></a></li>
-						<li><a href="#"><i class="ic4"></i></a></li>
+						<li><a href="{{ url('/cart')}}" ><i class="glyphicon glyphicon-shopping-cart" ></i></a></li>
+						<li><a href="{{ url('/cart')}}" ><i> Cart</i></a></li>
 					</ul>
 					
 			</div>
@@ -95,16 +93,11 @@
 </nav>
 			</div>
 			<div class="col-sm-2 search-right">
-			@include('particals.search')
+			
 					</ul>
 					<div class="cart box_1">
-						<a href="{{ url('/checkout')}}">
-						<h3> <div class="total">
-							<span class="simpleCart_total"></span></div>
-							<img src="images/cart.png" alt=""/></h3>
-						</a>
-						<a  href="{{route('cart.index')}}" class="glyphicon glyphicon-shopping-cart" color="black">Cart:<span class="cart-count"> <span>4</span></span></a>
-						</a>
+                     @include('particals.search')
+
 					</div>
 					<div class="clearfix"> </div>
 					

@@ -71,6 +71,8 @@ h1,h2,h3,h4,h5,h6,label,p{
 .header-social ul li a i{
 	width: 17px;
     height: 17px;
+    text-decoration:none;
+    color:#fff;
     display: block;
     background: url(../images/img-sprite.png)no-repeat -14px -14px ;
 	margin:0 0.3em;
