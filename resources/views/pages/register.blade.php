@@ -6,9 +6,9 @@
 
 <div class="banner-top">
 	<div class="container">
-		<h1>Register</h1>
+		<h1>Regristreeru</h1>
 		<em></em>
-		<h2><a href="{{ url('/')}}">Home</a><label>/</label>Register</h2>
+		<h2><a href="{{ url('/')}}">Home</a><label>/</label>Regristreeru</h2>
 	</div>
 </div>
 <!--login-->

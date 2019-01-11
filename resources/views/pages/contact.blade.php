@@ -6,9 +6,9 @@
 
 <div class="banner-top">
 	<div class="container">
-		<h1>Contact</h1>
+		<h1>Kontakt</h1>
 		<em></em>
-		<h2><a href="{{ url('/')}}">Home</a><label>/</label>Contact</h2>
+		<h2><a href="{{ url('/')}}">Home</a><label>/</label>Kontakt</h2>
 	</div>
 </div>	
 		

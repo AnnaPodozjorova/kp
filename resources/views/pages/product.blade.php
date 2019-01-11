@@ -8,9 +8,9 @@
  <!--banner-->
 <div class="banner-top">
 	<div class="container">
-		<h1>Products</h1>
+		<h1>Tooted</h1>
 		<em></em>
-		<h2><a href="{{ url('/')}}">Home</a><label>/</label>Products</h2>
+		<h2><a href="{{ url('/')}}">Home</a><label>/</label>Tooted</h2>
 	</div>
 </div>
 

@@ -13,8 +13,8 @@
 		<div class="container">
 		<div class="col-sm-5 col-md-offset-2  header-login">
 					<ul >
-						<li><a href="{{ url('/login')}}">Siene</a></li>
-						<li><a href="{{ url('/register')}}">Reristreeru</a></li>
+						<li><a href="{{ url('/login')}}">Sisene</a></li>
+						<li><a href="{{ url('/register')}}">Regristreeru</a></li>
 						
 					</ul>
 				</div>

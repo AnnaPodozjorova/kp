@@ -4,7 +4,7 @@
 @include('particals.airMessage')
 <div class="banner-top">
 	<div class="container">
-		<h1>Search Results</h1>
+		<h1>Otsingu Vastus</h1>
 		<em></em>
 		
 	</div>

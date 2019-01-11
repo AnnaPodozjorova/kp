@@ -43,11 +43,11 @@
     <div class="table-responsive">
     	    <table class="table-heading simpleCart_shelfItem">
 		  <tr>
-			<th class="table-grid">Item</th>
+			<th class="table-grid">Toode</th>
 					
-			<th>Prices</th>
-			<th >Delivery </th>
-			<th>Subtotal</th>
+			<th>Hinnad</th>
+			<th >Saatmine </th>
+			<th>Summa</th>
 		  </tr>
 		  <tr class="cart-header">
 
@@ -62,7 +62,7 @@
 			<td>$100.00</td>
 			<td>FREE SHIPPING</td>
 			<td class="item_price">$100.00</td>
-			<td class="add-check"><a class="item_add hvr-skew-backward" href="#">Add To Cart</a></td>
+			<td class="add-check"><a class="item_add hvr-skew-backward" href="#">Lisa ostukorvi</a></td>
 		  </tr>
 		  <tr class="cart-header1">
 		  <td class="ring-in"><a href="{{ url('/single')}}" class="at-in"><img src="images/ch2.jpg" class="img-responsive" alt=""></a>
@@ -75,7 +75,7 @@
 			<td>$100.00</td>
 			<td>FREE SHIPPING</td>
 			<td class="item_price">$100.00</td>
-			<td class="add-check"><a class="item_add hvr-skew-backward" href="#">Add To Cart</a></td>
+			<td class="add-check"><a class="item_add hvr-skew-backward" href="#">Lisa ostukorvi</a></td>
 		  </tr>
 		  <tr class="cart-header2">
 		  <td class="ring-in"><a href="{{ url('/single')}}" class="at-in"><img src="images/ch1.jpg" class="img-responsive" alt=""></a>
@@ -88,14 +88,14 @@
 			<td>$100.00</td>
 			<td>FREE SHIPPING</td>
 			<td class="item_price">$100.00</td>
-			<td class="add-check"><a class="item_add hvr-skew-backward" href="#">Add To Cart</a></td>
+			<td class="add-check"><a class="item_add hvr-skew-backward" href="#">Lisa ostukorvi</a></td>
 		  </tr>
 		  
 	</table>
 	</div>
 	</div>
 	<div class="produced">
-	<a href="{{ url('/single')}}" class="hvr-skew-backward">Produced To Buy</a>
+	<a href="{{ url('/single')}}" class="hvr-skew-backward">Osta</a>
 	 </div>
 </div>
 </div>
