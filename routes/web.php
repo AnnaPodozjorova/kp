@@ -38,3 +38,8 @@ Route::get('/search', 'HomeController@search')->name('search');
 
 //cart
 Route::get('/cart', 'CartController@index')->name('cart.index');
+
+Route::get('/add-to-cart/{id}', [
+    'uses'=> 'ProductController@getAddToCart',
+    'as'=>'product.addToCart'
+]);

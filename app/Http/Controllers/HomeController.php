@@ -51,7 +51,7 @@ class HomeController extends Controller
 
     public function getProduct($id){
          $mightAlsoLike = Subject::mightAlsoLike()->get();
-
+         $product =\App\Subject::find($id);
         $Subjects=\App\Subject::find($id);
         $Products = Subject::all()->toArray();
         $categories = DB::select('select * from _category');
