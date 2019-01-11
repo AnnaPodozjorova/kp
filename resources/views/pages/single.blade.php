@@ -17,7 +17,7 @@
 
 <div class="container">
 	@foreach($Subjects as $row)
-@if ($row['id'] == '3' )
+<!-- @if ($row['id'] == request()->route('id')) -->
 <div class="col-md-9">
 	<div class="col-md-5 grid">		
 		<div class="flexslider">
@@ -125,7 +125,7 @@
 </div>
 <!----->
 
-@endif
+<!-- @endif -->
     @endforeach
 <div class="col-md-3 product-bottom product-at">
 			<!--categories-->

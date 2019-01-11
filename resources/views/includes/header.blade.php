@@ -67,8 +67,8 @@
 							
 									@foreach ($subcategories as $subcategory)
               						 @if($category->id == $subcategory->idCat)
-               							<a href="{{URL::to('Categories/subcat/'.$subcategory->id)}}">
-                  						{!! $subcategory->name !!} </a>
+               						<ul>	<li><a href="{{URL::to('Categories/subcat/'.$subcategory->id)}}">
+										   {!! $subcategory->name !!}</a></li> </ul>
                						@else 
                						@endif
 									@endforeach

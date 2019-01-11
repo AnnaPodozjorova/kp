@@ -18,15 +18,12 @@ INSERT INTO card VALUES
 
 INSERT INTO _category VALUES 
 (1, 'Hobitarbed'),
-(2, 'Kunstitarbed'),
-(3, 'Koolitarbed'),
-(4, 'Pabertarbed'),
-(5, 'Kirjutusvahendud');
+(2, 'Kunstitarbed');
 
 INSERT INTO _sub_category VALUES 
-(1, 1,'pliiatsid'),
-(2, 2,'akvarellvärvid'),
-(3, 2,'akrüülvärvid');
+(1, 1,'Pliiatsid'),
+(2, 2,'Akvarellvärvid'),
+(3, 2,'Akrüülvärvid');
 
 INSERT INTO subject VALUES 
 (1, 3,'AKRÜÜLKOMPLEKT "SIMPLY" 12X12ML DALER-ROWNEY', 'Need varvid on voimalik kasutada otse tuubist ning nad sobivad kogu kunstipindadele nagu paber, papp ja lõuend.', 
