@@ -10,7 +10,7 @@
 	<div class="container">
 		<h1>Tooted</h1>
 		<em></em>
-		<h2><a href="{{ url('/')}}">Home</a><label>/</label>Tooted</h2>
+		<h2><a href="{{ url('/')}}">Kunstipood</a><label>/</label>Tooted</h2>
 	</div>
 </div>
 

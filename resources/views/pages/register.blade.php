@@ -8,7 +8,7 @@
 	<div class="container">
 		<h1>Regristreeru</h1>
 		<em></em>
-		<h2><a href="{{ url('/')}}">Home</a><label>/</label>Regristreeru</h2>
+		<h2><a href="{{ url('/')}}">Kunstipood</a><label>/</label>Regristreeru</h2>
 	</div>
 </div>
 <!--login-->

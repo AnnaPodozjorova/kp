@@ -29,11 +29,6 @@ class HomeController extends Controller
         return view('pages.login', $this->category(), $this->subCategory());
     }
 
-
-    public function checkout() {
-        return view('pages.Checkout', $this->category(), $this->subCategory());
-    }
-
     public function contact() {
         return view('pages.contact', $this->category(), $this->subCategory());
     }

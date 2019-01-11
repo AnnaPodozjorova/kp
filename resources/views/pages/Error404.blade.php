@@ -9,7 +9,7 @@
 	<div class="container">
 		<h1>404</h1>
 		<em></em>
-		<h2><a href="{{ url('/')}}">Home</a><label>/</label>404</h2>
+		<h2><a href="{{ url('/')}}">Kunstipood</a><label>/</label>404</h2>
 	</div>
 </div>
 <!--login-->
